@@ -16,7 +16,7 @@
 ** returns an integer depending on if s1 is equal, less than
 ** or greater than s2.
 */
-int	ft_strncmp(const char *s1, const char *s2, unsigned int n)
+int	ft_strncmp(const char *s1, const char *s2, size_t n)
 {
 	unsigned int	i;
 

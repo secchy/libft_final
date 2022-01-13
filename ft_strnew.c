@@ -23,7 +23,7 @@ char	*ft_strnew(size_t size)
 	size_t	i;
 
 	i = 0;
-	s = (char *) malloc( (size + 1) * sizeof(char));
+	s = (char *) malloc((size + 1) * sizeof(char));
 	if (!s)
 		return (NULL);
 	while (i < size)

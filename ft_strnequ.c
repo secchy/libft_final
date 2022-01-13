@@ -10,13 +10,11 @@
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "libft.h"
 /*
 ** Compares s1 and s2 up to n characters or '\0'. If the
 ** strings are identical, function returns 1, otherwise 0.
 */
-
-#include "libft.h"
-
 int	ft_strnequ(char const *s1, char const *s2, size_t n)
 {
 	if (n == 0)

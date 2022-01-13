@@ -10,13 +10,11 @@
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "libft.h"
 /*
 ** Compares s1 and s2. If the strings are identical
 ** function returns 1, otherwise 0.
 */
-
-#include "libft.h"
-
 int	ft_strequ(char const *s1, char const *s2)
 {
 	if (!s1 || !s2)

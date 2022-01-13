@@ -11,14 +11,12 @@
 /* ************************************************************************** */
 
 #include "libft.h"
-
 /*
 ** Allocates (with malloc(3)) and returns an array of “fresh” strings
 ** (all ending with ’\0’, including the array itself) obtained by spliting
 ** s using the character c as a delimiter. If the allocation fails the function
 ** returns NULL.
 */
-
 static	char	**ft_word_arr(char const *s, char c, size_t words)
 {
 	size_t	word_len;
@@ -28,7 +26,7 @@ static	char	**ft_word_arr(char const *s, char c, size_t words)
 
 	i = 0;
 	n = 0;
-	arr = (char **)malloc(sizeof(char *) * (words + 1));
+	arr = (char **) malloc((words + 1) * sizeof(char *));
 	if (!arr)
 		return (NULL);
 	while (n < words && arr)
@@ -36,7 +34,7 @@ static	char	**ft_word_arr(char const *s, char c, size_t words)
 		while (s[i] != '\0' && s[i] == c)
 			i++;
 		word_len = ft_wordlen(&s[i], c);
-		arr[n] = malloc(sizeof(**arr) * (word_len + 1));
+		arr[n] = (char *) malloc((word_len + 1) * sizeof(**arr));
 		ft_strncpy(arr[n], &s[i], word_len);
 		arr[n][word_len] = '\0';
 		while (s[i] != '\0' && s[i] != c)

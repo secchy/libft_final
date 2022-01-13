@@ -10,18 +10,14 @@
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "libft.h"
 /*
-** Strcmp compares two strings, and returns an integer
+** Compares two strings, and returns an integer
 ** depending on the result of the comparison.
 ** 0 if equal, negative value if s1 < s2, positive
 ** value is s1 > s2.
 */
 
-#include "libft.h"
-/*
-** Compares s1 to s2, returns an integer depending on if
-** s1 is equal, less than or greater than s2.
-*/
 int	ft_strcmp(const char *s1, const char *s2)
 {
 	while (*s1 == *s2)

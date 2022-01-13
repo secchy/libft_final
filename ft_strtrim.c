@@ -34,7 +34,7 @@ char	*ft_strtrim(char const *s)
 	}
 	len = ft_strlen(s);
 	if (len == i)
-		return ("\0");
+		return (ft_strnew(0));
 	while (s[len - 1] == ' ' || s[len - 1] == '\t' || s[len - 1] == '\n')
 	{
 		len--;

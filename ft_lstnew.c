@@ -19,7 +19,7 @@ t_list	*ft_lstnew(void const *content, size_t content_size)
 {
 	t_list	*node;
 
-	node = (t_list *)malloc(sizeof(t_list));
+	node = (t_list *) malloc(sizeof(t_list));
 	if (!node)
 		return (NULL);
 	if (content == NULL)
@@ -29,7 +29,7 @@ t_list	*ft_lstnew(void const *content, size_t content_size)
 	}
 	else
 	{
-		node->content = (void *)malloc(sizeof(content) * content_size);
+		node->content = (void *) malloc(content_size * sizeof(content));
 		if (!node->content)
 			return (NULL);
 		ft_memcpy(node->content, content, content_size);

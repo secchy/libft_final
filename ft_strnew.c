@@ -10,22 +10,20 @@
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "libft.h"
 /*
 ** Allocates and returns a fresh string
 ** ending with '\0'. Each character of
 ** the string is initialized at '\0'.
 ** If malloc fails return NULL.
 */
-
-#include "libft.h"
-
 char	*ft_strnew(size_t size)
 {
 	char	*s;
 	size_t	i;
 
 	i = 0;
-	s = (char *) malloc(sizeof(char) * size + 1);
+	s = (char *) malloc( (size + 1) * sizeof(char));
 	if (!s)
 		return (NULL);
 	while (i < size)

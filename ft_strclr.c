@@ -10,10 +10,6 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-/*
-** Sets every character of the string to the value '\0'.
-*/
-
 #include "libft.h"
 /*
 ** Clears a string by setting all characters to '\0'.
